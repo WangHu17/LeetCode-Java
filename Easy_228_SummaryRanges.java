@@ -12,7 +12,7 @@ public class Easy_228_SummaryRanges {
 
     //我的方法
     //Runtime: 6 ms, faster than 72.84% of Java online submissions for Summary Ranges.
-    //Memory Usage: 37.6 MB, less than 45.81% of Java online submissions for Summary Ranges.
+    //Memory Usage: 37.6 MB, less than 45.81% of Java online submissions for Summary Ranges
     public List<String> summaryRanges(int[] nums) {
         ArrayList<String> list = new ArrayList<>();
         if(nums.length==0)return list;
