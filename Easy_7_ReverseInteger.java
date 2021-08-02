@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：将一个整数倒转（考虑结果是否超过int范围）
  * @create 2021-07-26 16:51
  */
 public class Easy_7_ReverseInteger {
