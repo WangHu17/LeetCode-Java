@@ -1,6 +1,6 @@
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：爬楼梯
  * @create 2021-07-28 11:03
  */
 public class Easy_70_ClimbingStairs {
