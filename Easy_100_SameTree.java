@@ -2,7 +2,7 @@ import bean.TreeNode;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：判断两个二叉树是否相同
  * @create 2021-07-30 9:56
  */
 public class Easy_100_SameTree {

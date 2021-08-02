@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：求数组指定区间中元素的和
  * @create 2021-07-23 17:01
  */
 public class Easy_303_RangeSumQueryImmutable {

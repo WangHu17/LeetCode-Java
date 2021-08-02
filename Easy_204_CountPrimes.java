@@ -3,7 +3,7 @@ import org.junit.Test;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：求n以内的质数的个数
  * @create 2021-07-20 14:00
  */
 public class Easy_204_CountPrimes {

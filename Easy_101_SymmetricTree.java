@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：对称树
  * @create 2021-07-30 10:52
  */
 public class Easy_101_SymmetricTree {
@@ -16,7 +16,7 @@ public class Easy_101_SymmetricTree {
         return isMirror(root,root);
     }
 
-    //与判断两个二叉树是否相同的方法类似，一个从左子树开始先序遍历，一个从右子树开始反先序遍历（不知道是不是这样）
+    //与判断两个二叉树是否相同的方法类似，一个从左子树开始先序遍历，一个从右子树开始反先序遍历
     public boolean isMirror(TreeNode l1,TreeNode l2){
         if(l1==null&&l2==null)return true;
         if(l1==null||l2==null)return false;

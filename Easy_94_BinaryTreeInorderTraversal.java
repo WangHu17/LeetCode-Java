@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：二叉树中序遍历
  * @create 2021-07-29 10:34
  */
 public class Easy_94_BinaryTreeInorderTraversal {

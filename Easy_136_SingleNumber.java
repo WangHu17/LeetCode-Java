@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：找出数组中只有一个的元素
  * @create 2021-07-19 15:21
  */
 public class Easy_136_SingleNumber {

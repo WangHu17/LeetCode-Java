@@ -2,7 +2,7 @@ import bean.ListNode;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：移除一个已排序链表中重复的元素
  * @create 2021-07-29 9:15
  */
 public class Easy_83_RemoveDuplicatesFromSortedList {
