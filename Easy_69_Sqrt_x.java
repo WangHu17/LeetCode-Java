@@ -2,7 +2,7 @@ import org.junit.Test;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：手动求根号
  * @create 2021-07-28 9:19
  */
 public class Easy_69_Sqrt_x {
