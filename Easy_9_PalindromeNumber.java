@@ -2,7 +2,7 @@ import org.junit.Test;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：回文数
  * @create 2021-07-27 9:44
  */
 public class Easy_9_PalindromeNumber {
