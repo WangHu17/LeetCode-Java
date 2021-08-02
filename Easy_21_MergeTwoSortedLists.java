@@ -2,7 +2,7 @@ import bean.ListNode;
 
 /**
  * @author wanghu
- * @discrption：
+ * @discrption：合并两个排好序的链表
  * @create 2021-07-27 11:31
  */
 public class Easy_21_MergeTwoSortedLists {
