@@ -44,7 +44,7 @@ public class Easy_141_LinkedListCycle {
         return false;
     }
 
-    //方法三（leetcode讨论区）：
+    //方法三（leetcode讨论区）
     //Runtime: 0 ms, faster than 100.00% of Java online submissions for Linked List Cycle.
     //Memory Usage: 40 MB, less than 59.82% of Java online submissions for Linked List Cycle.
     public boolean hasCycle2(ListNode head) {
