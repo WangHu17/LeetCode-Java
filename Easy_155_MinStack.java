@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import org.junit.Test;
+
+import java.util.*;
 
 /**
  * @author wanghu
@@ -61,25 +60,73 @@ public class Easy_155_MinStack {
     //我的方法二：使用集合（更慢了）
     //Runtime: 454 ms, faster than 5.02% of Java online submissions for Min Stack.
     //Memory Usage: 40.5 MB, less than 81.19% of Java online submissions for Min Stack.
-    private List<Integer> stack = new ArrayList<>();
+//    private List<Integer> stack = new ArrayList<>();
+//
+//    public Easy_155_MinStack() {
+//    }
+//
+//    public void push(int val) {
+//        stack.add(val);
+//    }
+//
+//    public void pop() {
+//        stack.remove(stack.size()-1);
+//    }
+//
+//    public int top() {
+//        return stack.get(stack.size()-1);
+//    }
+//
+//    public int getMin() {
+//        return Collections.min(stack);
+//    }
+
+    //方法三（柳婼）：好吧，原来可以直接用栈结构。使用两个栈，一个存原始数据，一个存最小值
+    //Runtime: 5 ms, faster than 59.20% of Java online submissions for Min Stack.
+    //Memory Usage: 40.9 MB, less than 44.16% of Java online submissions for Min Stack.
+    private Stack<Integer> stack = new Stack<>();
+    private Stack<Integer> min = new Stack<>();
 
     public Easy_155_MinStack() {
     }
 
     public void push(int val) {
-        stack.add(val);
+        stack.push(val);
+        if (min.isEmpty() || min.peek() >= val) {
+            min.push(val);
+        }
     }
 
     public void pop() {
-        stack.remove(stack.size()-1);
+        if (stack.peek().equals(min.peek())) {
+            stack.pop();
+            min.pop();
+        } else {
+            stack.pop();
+        }
     }
 
     public int top() {
-        return stack.get(stack.size()-1);
+        return stack.peek();
     }
 
     public int getMin() {
-        return Collections.min(stack);
+        return min.peek();
+    }
+
+    @Test
+    public void test(){
+        Easy_155_MinStack s = new Easy_155_MinStack();
+        s.push(512);
+        s.push(-1024);
+        s.push(-1024);
+        s.push(512);
+        s.pop();
+        System.out.println("最小："+s.getMin());
+        s.pop();
+        System.out.println("最小："+s.getMin());
+        s.pop();
+        System.out.println("最小："+s.getMin());
     }
 
 }
