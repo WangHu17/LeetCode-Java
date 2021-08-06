@@ -14,6 +14,7 @@ public class Easy_160_IntersectionOfTwoLinkedLists {
     */
     //Runtime: 1 ms, faster than 97.47% of Java online submissions for Intersection of Two Linked Lists.
     //Memory Usage: 41.7 MB, less than 79.20% of Java online submissions for Intersection of Two Linked Lists.
+
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if (headA == null || headB == null) return null;
         ListNode p = headA;
