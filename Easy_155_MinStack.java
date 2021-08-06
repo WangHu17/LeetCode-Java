@@ -13,49 +13,73 @@ public class Easy_155_MinStack {
     //我的方法一：使用数组（太慢，太耗内存，需要手动扩容）
     // Runtime: 70 ms, faster than 8.83% of Java online submissions for Min Stack.
     //Memory Usage: 42.5 MB, less than 17.71% of Java online submissions for Min Stack.
-    private Integer[] stack;
+//    private Integer[] stack;
+//
+//    private int size=0;
+//
+//    public Easy_155_MinStack() {
+//        stack = new Integer[10];
+//    }
+//
+//    public void push(int val) {
+//        expandSize(size+1);
+//        stack[size++] = val;
+//    }
+//
+//    public void pop() {
+//        Integer m = null;
+//        if(size>0){
+//            m = stack[size-1];
+//            stack[size-1]=null;
+//            size--;
+//        }
+//    }
+//
+//    public int top() {
+//        return stack[size-1];
+//    }
+//
+//    public int getMin() {
+//        int n = size;
+//        int m = stack[n-1];
+//        while (n>1){
+//            n--;
+//            if(m>stack[n-1]){
+//                m=stack[n-1];
+//            }
+//        }
+//        return m;
+//    }
+//
+//    private void expandSize(int size){
+//        if(size > stack.length){
+//            size = size*(3/2)+1;
+//            stack = Arrays.copyOf(stack,size);
+//        }
+//    }
 
-    private int size=0;
+    //我的方法二：使用集合（更慢了）
+    //Runtime: 454 ms, faster than 5.02% of Java online submissions for Min Stack.
+    //Memory Usage: 40.5 MB, less than 81.19% of Java online submissions for Min Stack.
+    private List<Integer> stack = new ArrayList<>();
 
     public Easy_155_MinStack() {
-        stack = new Integer[10];
     }
 
     public void push(int val) {
-        expandSize(size+1);
-        stack[size++] = val;
+        stack.add(val);
     }
 
     public void pop() {
-        Integer m = null;
-        if(size>0){
-            m = stack[size-1];
-            stack[size-1]=null;
-            size--;
-        }
+        stack.remove(stack.size()-1);
     }
 
     public int top() {
-        return stack[size-1];
+        return stack.get(stack.size()-1);
     }
 
     public int getMin() {
-        int n = size;
-        int m = stack[n-1];
-        while (n>1){
-            n--;
-            if(m>stack[n-1]){
-                m=stack[n-1];
-            }
-        }
-        return m;
-    }
-
-    private void expandSize(int size){
-        if(size > stack.length){
-            size = size*(3/2)+1;
-            stack = Arrays.copyOf(stack,size);
-        }
+        return Collections.min(stack);
     }
 
 }
