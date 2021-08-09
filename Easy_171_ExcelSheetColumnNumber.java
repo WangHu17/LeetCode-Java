@@ -18,7 +18,8 @@ public class Easy_171_ExcelSheetColumnNumber {
         }
         return sum;
     }
-
+	
+    //差不多的方法
     //Runtime: 1 ms, faster than 100.00% of Java online submissions for Excel Sheet Column Number.
     //Memory Usage: 39 MB, less than 46.44% of Java online submissions for Excel Sheet Column Number.
     public int titleToNumber1(String columnTitle) {
