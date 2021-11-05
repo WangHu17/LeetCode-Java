@@ -7,6 +7,22 @@
  */
 public class Easy_441_ArrangingCoins {
 
+    // 二分法
+    //Runtime: 1 ms, faster than 100.00% of Java online submissions for Arranging Coins.
+    //Memory Usage: 36.1 MB, less than 81.65% of Java online submissions for Arranging Coins.
+    public int arrangeCoins1(int n) {
+        long left = 0, right = n;
+        long cur = 0, mid = 0;
+        while (left <= right) {
+            mid = left + (right - left) / 2;
+            cur = mid * (mid + 1) / 2;
+            if (cur == n) return (int)mid;
+            if (cur < n) left = mid + 1;
+            else right = mid - 1;
+        }
+        return (int)right;
+    }
+
     //我的方法
     //Runtime: 6 ms, faster than 41.34% of Java online submissions for Arranging Coins.
     //Memory Usage: 36.1 MB, less than 71.33% of Java online submissions for Arranging Coins.
