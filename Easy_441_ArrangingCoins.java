@@ -7,7 +7,7 @@
  */
 public class Easy_441_ArrangingCoins {
 
-    // 二分法
+    // 二分法：利用数学公式，台阶的和为等差数列求和，即 k 层台阶为 k(k+1)/2，所以该问题就是求最大的k使得 k(k+1)/2 <= n
     //Runtime: 1 ms, faster than 100.00% of Java online submissions for Arranging Coins.
     //Memory Usage: 36.1 MB, less than 81.65% of Java online submissions for Arranging Coins.
     public int arrangeCoins1(int n) {
