@@ -3,7 +3,8 @@ import bean.TreeNode;
 /**
  * @author wanghu
  * @discrption： 给定两棵二叉树 root 和 subRoot 的根，如果存在具有相同结构和 subRoot 节点值的 root 子树，
- * 则返回 true，否则返回 false。 二叉树的子树是由树中的一个节点和该节点的所有后代组成的树。树树也可以被认为是其自身的子树。
+ * 则返回 true，否则返回 false。 二叉树的子树是由树中的一个节点和该节点的所有后代组成的树。
+ * 树树也可以被认为是其自身的子树。
  * @create 2021-12-03 18:40
  */
 public class Easy_572_SubtreeOfAnotherTree {
