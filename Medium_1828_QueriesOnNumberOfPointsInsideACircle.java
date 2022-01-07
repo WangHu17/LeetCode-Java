@@ -4,7 +4,7 @@
  * @create 2022-01-06 11:17
  */
 public class Medium_1828_QueriesOnNumberOfPointsInsideACircle {
-    
+
     //我的方法
     //Runtime: 25 ms, faster than 71.69% of Java online submissions for Queries on Number of Points Inside a Circle.
     //Memory Usage: 47.4 MB, less than 22.43% of Java online submissions for Queries on Number of Points Inside a Circle.
